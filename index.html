@@ -6,17 +6,14 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="./app.js"></script>
     <title>Show Text Button</title>
-    <style>
-      #displayText {
-        display: none;
-      }
-    </style>
   </head>
   <body>
-    <button onclick="showText()">Show Text</button>
-    <button onclick="startStopTimer()">Start/Stop Timer</button>
+    <button onclick="startStopTimer()">Start/Reset Timer</button>
     <p id="timerDisplay">0 seconds</p>
+    <button onclick="showText()">Show Text</button>
 
-    <p id="displayText">Some text to be displayed for 5 seconds.</p>
+    <p id="displayText" style="display: none">
+      This text will be displayed for 5 seconds.
+    </p>
   </body>
 </html>
