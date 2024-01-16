@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="./app.js"></script>
-    <title>Document</title>
+    <title>Show Text Button</title>
+    <style>
+      #displayText {
+        display: none;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <button onclick="showText()">Show Text</button>
+    <button onclick="startStopTimer()">Start/Stop Timer</button>
+    <p id="timerDisplay">0 seconds</p>
+
+    <p id="displayText">Some text to be displayed for 5 seconds.</p>
+  </body>
 </html>
